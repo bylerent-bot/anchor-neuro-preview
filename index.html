@@ -10,6 +10,54 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Social share (Open Graph / Twitter) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anchor Neuro | Psychiatry &amp; Neurofeedback in Virginia Beach" />
+  <meta property="og:description" content="Integrative, trauma-informed psychiatric care and neurofeedback in Virginia Beach, VA. Discreet support for service members, veterans, and their families. In-person and telehealth." />
+  <meta property="og:url" content="https://anchorneuro.com/" />
+  <meta property="og:image" content="https://anchorneuro.com/assets/courtney-davis.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured data: practice + provider (dormant until launch; site is noindex while in preview) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "@id": "https://anchorneuro.com/#practice",
+    "name": "Anchor Neuro",
+    "description": "Integrative, trauma-informed psychiatric care and neurofeedback in Virginia Beach, VA.",
+    "url": "https://anchorneuro.com/",
+    "telephone": "+1-757-780-8153",
+    "medicalSpecialty": "Psychiatric",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1206 Laskin Rd, Suite 201-G",
+      "addressLocality": "Virginia Beach",
+      "addressRegion": "VA",
+      "postalCode": "23451",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Virginia Beach", "Norfolk", "Chesapeake", "Hampton Roads", "Virginia (telehealth)"],
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "Neurofeedback" },
+      { "@type": "MedicalProcedure", "name": "Brainspotting" },
+      { "@type": "MedicalTherapy", "name": "Psychiatric medication management" },
+      { "@type": "MedicalTherapy", "name": "Trauma-informed psychiatric care" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Courtney Davis, DNP, APRN, PMHNP-BC, BCN",
+    "url": "https://anchorneuro.com/",
+    "worksFor": { "@id": "https://anchorneuro.com/#practice" },
+    "medicalSpecialty": "Psychiatric",
+    "memberOf": { "@type": "Organization", "name": "The Headstrong Project" }
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -38,9 +86,10 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#neurofeedback">Neurofeedback</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#getting-started">Getting Started</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#contact" class="nav-cta">Book a Consultation</a></li>
+          <li><a href="fit.html#request" class="nav-cta">Request a free consult</a></li>
         </ul>
       </nav>
     </div>
@@ -56,7 +105,7 @@
           <h1>Healing begins when your mind feels safe.</h1>
           <p class="hero-sub">Integrative, trauma-informed psychiatric care and neurofeedback, built around you. Anchor Neuro helps you feel grounded, clear, and like yourself again.</p>
           <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Book a consultation</a>
+            <a href="fit.html#request" class="btn btn-primary">Request a free consult</a>
             <a href="#neurofeedback" class="btn btn-ghost">How neurofeedback works</a>
           </div>
           <ul class="hero-trust">
