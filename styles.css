@@ -172,14 +172,21 @@ a:hover { text-decoration: underline; }
   letter-spacing: .12em; text-transform: uppercase; color: var(--teal-dk);
   background: #fff; border: 1px solid #bcdcd3; padding: 5px 11px; border-radius: 100px;
 }
+.card-link { display: block; margin-top: 18px; margin-bottom: 0; font-weight: 600; color: var(--teal-dk); font-size: .95rem; }
+a.card { text-decoration: none; color: inherit; }
+a.card:hover { text-decoration: none; }
+a.card:hover .card-link { text-decoration: underline; }
 
 /* ---------- Conditions ---------- */
 .conditions { background: var(--sand); }
 .chip-grid { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; max-width: 800px; margin: 0 auto; }
 .chip-grid li {
   background: var(--white); border: 1px solid var(--line); border-radius: 100px;
-  padding: 13px 26px; font-weight: 500; color: var(--teal-dk); box-shadow: var(--shadow-sm);
+  font-weight: 500; color: var(--teal-dk); box-shadow: var(--shadow-sm);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
+.chip-grid li:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--seafoam); }
+.chip-grid li a { display: block; padding: 13px 26px; color: var(--teal-dk); text-decoration: none; }
 
 /* ---------- Feature grids ---------- */
 .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
@@ -266,6 +273,10 @@ a:hover { text-decoration: underline; }
 .crisis-bar p { max-width: var(--maxw); margin: 0 auto; padding: 18px 26px; font-size: .89rem; color: #d2e6e1; text-align: center; }
 .crisis-bar a { color: #fff; font-weight: 600; }
 .footer-legal { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-block: 24px; border-top: 1px solid rgba(255,255,255,.1); font-size: .82rem; color: #9cc0b9; }
+.footer-legal a { color: #cfe3df; }
+.footer-legal a:hover { color: #fff; }
+.footer-areas { width: 100%; color: #9cc0b9; margin-bottom: 6px; }
+.footer-disclaimer { width: 100%; color: #8fb3ac; font-size: .78rem; margin-top: 10px; line-height: 1.6; }
 
 /* ========================================================================
    Responsive
